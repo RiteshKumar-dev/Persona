@@ -1,7 +1,7 @@
 import openai
 from config.config import OPENAI_API_KEY
 
-client = openai.OpenAI(api_key=OPENAI_API_KEY)
+client = openai.OpenAI(api_key="OPENAI_API_KEY")
 
 def generate_response(prompt, persona):
     full_prompt = f"{persona}\n\n{prompt}"
